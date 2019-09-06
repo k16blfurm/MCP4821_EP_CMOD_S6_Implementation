@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -46,44 +47,51 @@ port(
 end Dac;
 
 architecture Behavioral of Dac is
+	signal start_write: std_logic := '0';
 begin
 process(CLK_LFC)
 begin
+	if(BTN_0 = '1') then
+		start_write <= '1';
+	end if;
 	
 	-- Note that the delays I've used are for 5 Mz, 200 ns
 	-- This is for the write command using the 10-channel dac
-	if rising_edge(CLK_LFC) then 
-		CS <= 1;
-		LDAC <= 1;
-	end if;
-	
-	SDI <= 0 after 200 ns;
-	-- Delay here and buffer pin
-	SDI <= 1 after 200 ns;
-	-- set SDI to 1 for gain =1, SDI to 0 if gain is 2X
-	SDI <= 1 after 200 ns;
-	-- Setting SHDN to 1 (active mode operation)
-	SDI <= 1 after 200 ns;
-	-- The next bits will be written to the DAC from existing ports on the board
-	-- Since this is just a test, we'll write to the DAC from PORTB and loop for extra channels 
-	SDI <= PORTB(0) after 200 ns;
-	SDI <= PORTB(1) after 200 ns;
-	SDI <= PORTB(2) after 200 ns;
-	SDI <= PORTB(3) after 200 ns;
-	SDI <= PORTB(4) after 200 ns;
-	SDI <= PORTB(5) after 200 ns;
-	SDI <= PORTB(6) after 200 ns;
-	SDI <= PORTB(7) after 200 ns;
-	SDI <= PORTB(0) after 200 ns;
-	SDI <= PORTB(1) after 200 ns;
-	SDI <= PORTB(2) after 200 ns;
-	SDI <= PORTB(3) after 200 ns;
-	-- note that the DAC type doesn't matter (8 10 or 12 channel), all of the bits get thrown away after anyways
-	-- stop writting to DAC now
-	if rising_edge(CLK_LFC) then
-		CS <= 0;
-		LDAC <= 0;
-		Vout <= 1;
+	if(start_write /= '1') then
+		if rising_edge(CLK_LFC) then 
+			CS <= '1';
+			LDAC <= '1';
+		end if;
+		
+		SDI <= '0' after 200 ns;
+		-- Delay here and buffer pin
+		SDI <= '1' after 200 ns;
+		-- set SDI to 1 for gain =1, SDI to 0 if gain is 2X
+		SDI <= '1' after 200 ns;
+		-- Setting SHDN to 1 (active mode operation)
+		SDI <= '1' after 200 ns;
+		-- The next bits will be written to the DAC from existing ports on the board
+		-- Since this is just a test, we'll write to the DAC from PORTB and loop for extra channels 
+		SDI <= PORTB(0) after 200 ns;
+		SDI <= PORTB(1) after 200 ns;
+		SDI <= PORTB(2) after 200 ns;
+		SDI <= PORTB(3) after 200 ns;
+		SDI <= PORTB(4) after 200 ns;
+		SDI <= PORTB(5) after 200 ns;
+		SDI <= PORTB(6) after 200 ns;
+		SDI <= PORTB(7) after 200 ns;
+		SDI <= PORTB(0) after 200 ns;
+		SDI <= PORTB(1) after 200 ns;
+		SDI <= PORTB(2) after 200 ns;
+		SDI <= PORTB(3) after 200 ns;
+		-- note that the DAC type doesn't matter (8 10 or 12 channel), all of the bits get thrown away after anyways
+		-- stop writting to DAC now
+		--if rising_edge(CLK_LFC) then
+			CS <= '0';
+			LDAC <= '0';
+			Vout <= '1';
+			start_write <= '0';
+		--end if;
 	end if;
 	end process;
 end Behavioral;

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: Dac.prj
 
@@ -108,20 +108,313 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" into library work
 Parsing entity <Dac>.
 Parsing architecture <Behavioral> of entity <dac>.
-ERROR:HDLCompiler:839 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 53: Type std_logic does not match with the integer literal
-ERROR:HDLCompiler:839 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 54: Type std_logic does not match with the integer literal
-ERROR:HDLCompiler:839 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 57: Type std_logic does not match with the integer literal
-ERROR:HDLCompiler:839 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 59: Type std_logic does not match with the integer literal
-ERROR:HDLCompiler:839 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 61: Type std_logic does not match with the integer literal
-ERROR:HDLCompiler:839 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 63: Type std_logic does not match with the integer literal
-ERROR:HDLCompiler:288 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 66: Cannot read from 'out' object portb ; use 'buffer' or 'inout'
-ERROR:HDLCompiler:854 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 47: Unit <behavioral> ignored due to previous errors.
-VHDL file C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd ignored due to errors
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Dac> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 54: btn_0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 60: start_write should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 75: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 76: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 77: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 78: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 79: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 80: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 81: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 82: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 83: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 84: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 85: portb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 86: portb should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Dac>.
+    Related source file is "C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd".
+WARNING:Xst:647 - Input <PORTB<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PORTB<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CLK_LFC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <SDI>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <start_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Vout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 Latch(s).
+Unit <Dac> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <Vout> (without init value) has a constant value of 1 in block <Dac>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <Vout> (without init value) has a constant value of 1 in block <Dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    start_write in unit <Dac>
+
+
+Optimizing unit <Dac> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Dac, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Dac.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4
+#      GND                         : 1
+#      LUT2                        : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 2
+#      LD                          : 1
+#      LD_1                        : 1
+# IO Buffers                       : 6
+#      IBUF                        : 2
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4cpg196-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               1  out of   4800     0%  
+ Number of Slice LUTs:                    2  out of   2400     0%  
+    Number used as Logic:                 2  out of   2400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      3
+   Number with an unused Flip Flop:       2  out of      3    66%  
+   Number with an unused LUT:             1  out of      3    33%  
+   Number of fully used LUT-FF pairs:     0  out of      3     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                   6  out of    106     5%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+start_write                        | NONE(SDI)              | 1     |
+start_write_G(start_write_G:O)     | NONE(*)(start_write)   | 1     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.391ns (Maximum Frequency: 718.778MHz)
+   Minimum input arrival time before clock: 2.183ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'start_write_G'
+  Clock period: 1.391ns (frequency: 718.778MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.391ns (Levels of Logic = 1)
+  Source:            start_write (LATCH)
+  Destination:       start_write (LATCH)
+  Source Clock:      start_write_G falling
+  Destination Clock: start_write_G falling
+
+  Data Path: start_write to start_write
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               3   0.498   0.651  start_write (start_write)
+     LUT2:I1->O            1   0.205   0.000  start_write_D (start_write_D)
+     LD:D                      0.037          start_write
+    ----------------------------------------
+    Total                      1.391ns (0.740ns logic, 0.651ns route)
+                                       (53.2% logic, 46.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'start_write'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.838ns (Levels of Logic = 1)
+  Source:            PORTB<3> (PAD)
+  Destination:       SDI (LATCH)
+  Destination Clock: start_write rising
+
+  Data Path: PORTB<3> to SDI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  PORTB_3_IBUF (PORTB_3_IBUF)
+     LD_1:D                    0.037          SDI
+    ----------------------------------------
+    Total                      1.838ns (1.259ns logic, 0.579ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'start_write_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.183ns (Levels of Logic = 2)
+  Source:            BTN_0 (PAD)
+  Destination:       start_write (LATCH)
+  Destination Clock: start_write_G falling
+
+  Data Path: BTN_0 to start_write
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.721  BTN_0_IBUF (BTN_0_IBUF)
+     LUT2:I0->O            1   0.203   0.000  start_write_D (start_write_D)
+     LD:D                      0.037          start_write
+    ----------------------------------------
+    Total                      2.183ns (1.462ns logic, 0.721ns route)
+                                       (67.0% logic, 33.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'start_write'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            SDI (LATCH)
+  Destination:       SDI (PAD)
+  Source Clock:      start_write rising
+
+  Data Path: SDI to SDI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             1   0.498   0.579  SDI (SDI_OBUF)
+     OBUF:I->O                 2.571          SDI_OBUF (SDI)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock start_write_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+start_write_G  |         |         |    1.391|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.28 secs
+ 
 --> 
 
-Total memory usage is 4470516 kilobytes
+Total memory usage is 4507000 kilobytes
 
-Number of errors   :    8 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 
