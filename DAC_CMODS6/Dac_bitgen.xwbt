@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.ncd
+OUTFILE=C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.bit
+FAMILY=Spartan6
+PART=xc6slx4-3cpg196
+WORKINGDIR=C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6
+LICENSE=WebPack
+USER_INFO=211731344_0_0_230
