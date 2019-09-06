@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="839" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 53: Type <arg fmt="%s" index="1">std_logic</arg> does not match with the integer literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="839" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 54: Type <arg fmt="%s" index="1">std_logic</arg> does not match with the integer literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="839" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 57: Type <arg fmt="%s" index="1">std_logic</arg> does not match with the integer literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="839" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 59: Type <arg fmt="%s" index="1">std_logic</arg> does not match with the integer literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="839" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 61: Type <arg fmt="%s" index="1">std_logic</arg> does not match with the integer literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="839" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 63: Type <arg fmt="%s" index="1">std_logic</arg> does not match with the integer literal
+</msg>
+
+<msg type="error" file="HDLCompiler" num="288" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 66: Cannot read from &apos;out&apos; object <arg fmt="%s" index="1">portb</arg> ; use &apos;buffer&apos; or &apos;inout&apos;
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="new" >"C:\Users\Blaine\Documents\GitHub\MCP4821_EP_CMOD_S6_Implementation\DAC_CMODS6\Dac.vhd" Line 47: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

@@ -1,0 +1,25 @@
+#Output pins to turn on DAC
+NET "VDD" LOC = "P5";
+NET "CS" LOC = "N5";
+NET "SCK" LOC = "N6";
+NET "SDI" LOC = "P7";
+NET "LDAC" LOC = "P12";
+NET "Vref" LOC = "N12";
+NET "Vss" LOC = "L14";
+NET "Vout" LOC = "L13";
+# Just testing with Low Frequency Clock
+NET "CLK_LFC" LOC = "N7"
+
+
+# These are from the B portion of the board
+NET "PORTB<0>" LOC = "K14";
+NET "PORTB<1>" LOC = "K13";
+NET "PORTB<2>" LOC = "J14";
+NET "PORTB<3>" LOC = "J13";
+NET "PORTB<4>" LOC = "H14";
+NET "PORTB<5>" LOC = "H13";
+NET "PORTB<6>" LOC = "F14";
+NET "PORTB<7>" LOC = "F13";
+
+# also, we will use the buttons to select writing to the dac
+NET "BTN_0" LOC = "P8";
